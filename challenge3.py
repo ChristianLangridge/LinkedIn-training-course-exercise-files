@@ -24,7 +24,7 @@ def encodeString(input):
 print(encodeString(MyString))
 
 
-SecondString = [('W',5), ('1',2), ('G',3)]
+SecondString = [('W',5), ('1',2), ('G',2)]
 
 
 def decodeString(list):
@@ -36,23 +36,6 @@ def decodeString(list):
 
 print(decodeString(encodeString(MyString)))
 
-
-
-     #previousChar = None
-     #counter = 1 
-     #resultlist = []
-
-     #for char in list: 
-         #if char != previousChar:
-             #if previousChar is not None:
-                 #resultlist.append((previousChar * counter))
-             #previousChar = char
-             #counter = 1 
-         #else: 
-             #counter += 1
-
-     #resultlist.append(previousChar * counter)
-     #return(resultlist)
 
 
 
