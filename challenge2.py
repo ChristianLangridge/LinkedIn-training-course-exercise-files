@@ -11,15 +11,19 @@ hexNumbers = {
 
 def hexToDec(hexNum):
 
+    total = 0 
+
     for char in hexNum:
         if char not in hexNumbers:
             return None
-        
-    try:
-        return hexNumbers[hexNum[0]] * 256 + hexNumbers[hexNum[1]] * 16 + hexNumbers[hexNum[2]]
     
-    except IndexError:
-        print('Index out of range')
+    for i in range(len(hexNum)):
+        exponent = len(hexNum) - 1 - i
+        digit_value = hexNumbers[hexNum[i]]
+        total += digit_value * (16 ** exponent)
+    return total 
+
+
         
 
 hexToDec('ABC')
