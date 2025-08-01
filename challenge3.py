@@ -19,7 +19,7 @@ def encodeString(input):
 
     # Add the last group    
     outputlist.append((prevChar, counter))
-    return(outputlist)
+    return outputlist
 
 print(encodeString(MyString))
 
